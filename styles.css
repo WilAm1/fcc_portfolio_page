@@ -23,7 +23,7 @@ h2 {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 0;
 }
 
@@ -62,7 +62,7 @@ ul {
     flex-flow: wrap row;
     justify-content: space-around;
     align-items: center;
-    margin: 0 1rem;
+    padding: 0;
 }
 
 img {
@@ -159,4 +159,35 @@ section.projects {
 
 .ending a {
     color: rebeccapurple;
+}
+
+@media screen and (max-width:800px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .navbar {
+        text-align: center;
+    }
+    body {
+        margin: 0;
+    }
+    .project-container {
+        display: block;
+        width: 60%;
+    }
+    .project-tile {
+        margin-top: 1em;
+    }
+    img {
+        object-fit: cover;
+    }
+    .ending {
+        margin: 0;
+    }
+    .footer a {
+        margin: 2em 1em;
+    }
 }
